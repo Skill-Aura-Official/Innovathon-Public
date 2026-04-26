@@ -1,378 +1,512 @@
-# ⚡ Innovathon — Skillaura Hackathon Platform
+# Innovathon - Official Hackathon Platform
 
-The inaugural online hackathon platform by **Skillaura**. A 3-day event where student teams of 3 build innovative solutions across 4 tracks — Web3, AI/ML, IoT, and Open Innovation.
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/) [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=FFD62E)](https://vitejs.dev/) [![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/) [![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
----
+The official platform for **Innovathon**, the inaugural online hackathon organized by **Skillaura**. A 3-day event where teams of 3 build innovative solutions to real-world problems across 7 distinct challenge domains.
 
-## 🛠️ Tech Stack
-
-| Layer | Technology |
-|-------|-----------|
-| **Frontend** | React 19 + Vite |
-| **Styling** | Tailwind CSS + Custom Glassmorphism CSS |
-| **Animations** | Framer Motion |
-| **Backend** | Node.js + Express |
-| **Database** | MongoDB (Mongoose) |
-| **Auth** | Firebase Auth (Google Sign-In) |
-| **Payment** | Razorpay |
-| **3D Background** | Three.js / React Three Fiber |
+🚀 **Website**: https://innovathon.skillaura.in  
+📧 **Contact**: support@skillaura.in
 
 ---
 
-## 📂 Project Structure
+## 🌟 About Innovathon
 
-```
-Innovathon/
-├── client/                    # React frontend (Vite)
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── layout/        # Header, Footer, ProtectedRoute
-│   │   │   ├── theme/         # ThemeBackground (Three.js)
-│   │   │   └── ui/            # LoadingScreen, AmbientBackground
-│   │   ├── config/
-│   │   │   └── themes.js      # 7 visual theme configs
-│   │   ├── contexts/
-│   │   │   └── AuthContext.jsx # Firebase + MongoDB auth state
-│   │   ├── pages/
-│   │   │   ├── Landing.jsx    # Public homepage
-│   │   │   ├── About.jsx      # About the event
-│   │   │   ├── Schedule.jsx   # 3-day event schedule
-│   │   │   ├── Themes.jsx     # Public theme showcase
-│   │   │   ├── Sponsors.jsx   # Sponsor tiers & CTA
-│   │   │   ├── FAQ.jsx        # 12 accordion FAQs
-│   │   │   ├── Contact.jsx    # Contact form + info
-│   │   │   ├── Login.jsx      # Google Sign-In
-│   │   │   ├── Dashboard.jsx  # User dashboard
-│   │   │   ├── Onboarding.jsx # 5-step team registration
-│   │   │   ├── Submission.jsx # Project submission form
-│   │   │   ├── Leaderboard.jsx# Team rankings
-│   │   │   ├── ThemeSelector.jsx # Dashboard theme picker
-│   │   │   └── Admin.jsx      # Admin panel
-│   │   ├── services/
-│   │   │   └── api.js         # Axios instance + API modules
-│   │   ├── styles/
-│   │   │   └── index.css      # Design system + utilities
-│   │   ├── App.jsx            # Router + layout
-│   │   ├── main.jsx           # Entry point
-│   │   └── firebase.js        # Firebase config
-│   └── package.json
-│
-├── server/                    # Express backend
-│   ├── src/
-│   │   ├── config/
-│   │   │   └── firebaseAdmin.js  # Firebase Admin SDK
-│   │   ├── middleware/
-│   │   │   ├── auth.js           # JWT/Firebase token verification
-│   │   │   └── errorHandler.js   # Global error handler
-│   │   ├── models/
-│   │   │   ├── User.js           # User schema
-│   │   │   ├── Team.js           # Team schema
-│   │   │   ├── Submission.js     # Submission schema
-│   │   │   └── Score.js          # Judge scoring schema
-│   │   ├── routes/
-│   │   │   ├── auth.js           # Auth + user search
-│   │   │   ├── teams.js          # Team CRUD
-│   │   │   ├── submissions.js    # Project submissions
-│   │   │   ├── admin.js          # Admin stats, CSV, management
-│   │   │   ├── leaderboard.js    # Public leaderboard
-│   │   │   └── payment.js        # Razorpay integration
-│   │   └── server.js             # Express app entry
-│   └── package.json
-│
-└── readme.md
-```
+Innovathon is a premier 48-hour online hackathon designed for students across India to showcase their problem-solving skills, creativity, and technical expertise. Our platform combines immersive visual experiences with powerful collaboration tools to create an unparalleled hackathon experience.
+
+### Event Highlights
+- ✨ **7 Problem Domains** - Choose your challenge
+- 🎨 **7 Visual Themes** - Customize your platform experience  
+- 👥 **Team of 3** - Build with your dream team
+- 💰 **₹300 Registration** - All-inclusive team fee
+- 🏆 **Expert Judging** - Industry leaders evaluate your work
+- 📊 **Live Leaderboard** - Watch scores update in real-time
+- 🔒 **Secure Platform** - Firebase-powered authentication & data security
+
+### Core Features
+- **Real-time Authentication** - Secure signup/login with Firebase
+- **Team Management** - Create, join, and manage teams with invite codes
+- **Project Submissions** - Upload repos, demos, and presentations
+- **3D Visual Themes** - 10+ immersive aesthetic themes (separate from problem domains)
+- **Live Scoring** - Judge submissions with transparent criteria
+- **Admin Dashboard** - Full platform oversight for organizers
+- **CSV Export** - Download all data for analysis
+- **Responsive Design** - Works perfectly on all devices
+
+---
+
+## 🎨 Visual Themes (Platform Aesthetics)
+
+Customize your platform look & feel - entirely separate from your problem domain choice:
+
+1. **AI** 🤖 - Neural network visualization with pulsing nodes
+2. **Sci-Fi** 🚀 - Holographic HUD with cyan scanlines
+3. **Cyberpunk** ⚡ - Neon-lit futuristic cityscape
+4. **Thunderstorm** ⛈️ - Lightning flashes with rain particle field
+5. **Ice Storm** ❄️ - Falling snow with frost aesthetics
+6. **Hellish Fire** 🔥 - Ember particles with fire glow effects
+7. **Windy** 🌬️ - Flowing wind trails and drift particles
+8. **Anime** 🌸 - Speed lines with dynamic Japanese aesthetics
+9. **Ocean** 🌊 - Fluid animations with deep sea colors
+10. **Default** ⚪ - Clean, professional minimal design
+
+Each theme includes custom Three.js 3D backgrounds, dynamic particle systems, atmospheric lighting, and unique color palettes.
+
+---
+
+## 🏗️ Tech Stack
+
+### Frontend
+| Technology | Purpose | Version |
+|------------|---------|---------|
+| **React** | UI framework | 19.2.5 |
+| **React DOM** | Web rendering | 19.2.5 |
+| **Vite** | Build tool | 8.0.10 |
+| **React Router DOM** | Client-side routing | 7.14.2 |
+| **React Three Fiber** | React renderer for Three.js | 9.6.0 |
+| **React Three Drei** | R3F helpers | 10.7.7 |
+| **Three.js** | 3D graphics engine | 0.184.0 |
+| **Framer Motion** | Animations | 12.38.0 |
+| **Firebase** | Backend services | 12.12.1 |
+| **React Firebase Hooks** | Firebase integration | 5.1.1 |
+| **Axios** | HTTP client | 1.15.2 |
+| **Tailwind CSS** | Styling | 4.2.4 |
+
+### Backend & Services
+- **Firebase Authentication** - Email/password & Google OAuth
+- **Cloud Firestore** - Real-time NoSQL database
+- **Cloud Functions** - Serverless backend logic
+- **Razorpay** - Payment processing
+
+### Development Tools
+- **ESLint** - Code linting (v10.2.1)
+- **Prettier** - Code formatting (v3.8.3)
+- **TypeScript** - Type safety (partial)
+- **PostCSS** - CSS processing
+- **Autoprefixer** - CSS vendor prefixing
 
 ---
 
 ## 📦 Dependencies
 
-### Client Dependencies
-
-| Package | Version | Purpose |
-|---------|---------|---------|
-| `react` | ^19.2.5 | UI framework |
-| `react-dom` | ^19.2.5 | React DOM renderer |
-| `react-router-dom` | ^7.14.2 | Client-side routing |
-| `axios` | ^1.15.2 | HTTP client for API calls |
-| `firebase` | ^12.12.1 | Firebase Auth (Google Sign-In) |
-| `react-firebase-hooks` | ^5.1.1 | React hooks for Firebase |
-| `framer-motion` | ^12.38.0 | Animations & transitions |
-| `three` | ^0.184.0 | 3D WebGL rendering |
-| `@react-three/fiber` | ^9.6.0 | React renderer for Three.js |
-| `@react-three/drei` | ^10.7.7 | Helpers for React Three Fiber |
-
-**Dev Dependencies:**
-
-| Package | Version | Purpose |
-|---------|---------|---------|
-| `vite` | ^8.0.10 | Build tool & dev server |
-| `@vitejs/plugin-react` | ^6.0.1 | React support for Vite |
-| `tailwindcss` | ^4.2.4 | Utility CSS framework |
-| `@tailwindcss/vite` | ^4.2.4 | Tailwind Vite plugin |
-| `eslint` | ^10.2.1 | Code linting |
-| `prettier` | ^3.8.3 | Code formatting |
-
-**Install all client dependencies with one command:**
-```bash
-cd client
-npm install
+### Production Dependencies
+```json
+{
+  "@react-three/drei": "^10.7.7",
+  "@react-three/fiber": "^9.6.0",
+  "axios": "^1.15.2",
+  "firebase": "^12.12.1",
+  "framer-motion": "^12.38.0",
+  "react": "^19.2.5",
+  "react-dom": "^19.2.5",
+  "react-firebase-hooks": "^5.1.1",
+  "react-router-dom": "^7.14.2",
+  "three": "^0.184.0"
+}
 ```
 
-**Or install manually:**
-```bash
-cd client
-
-# Core
-npm install react react-dom react-router-dom axios firebase react-firebase-hooks framer-motion
-
-# 3D / Three.js
-npm install three @react-three/fiber @react-three/drei
-
-# Dev tools
-npm install -D vite @vitejs/plugin-react tailwindcss @tailwindcss/vite eslint prettier
-```
-
-### Server Dependencies
-
-| Package | Version | Purpose |
-|---------|---------|---------|
-| `express` | ^5.2.1 | Web server framework |
-| `mongoose` | ^9.5.0 | MongoDB ODM |
-| `firebase-admin` | ^13.8.0 | Firebase Admin SDK (token verification) |
-| `cors` | ^2.8.6 | Cross-origin resource sharing |
-| `helmet` | ^8.1.0 | Security headers |
-| `dotenv` | ^17.4.2 | Environment variable loader |
-
-**Install all server dependencies with one command:**
-```bash
-cd server
-npm install
-```
-
-**Or install manually:**
-```bash
-cd server
-npm install express mongoose firebase-admin cors helmet dotenv
-
-# Dev (optional, for auto-restart)
-npm install -D nodemon
+### Development Dependencies
+```json
+{
+  "@eslint/js": "^10.0.1",
+  "@tailwindcss/vite": "^4.2.4",
+  "@types/react": "^19.2.14",
+  "@types/react-dom": "^19.2.3",
+  "@vitejs/plugin-react": "^6.0.1",
+  "eslint": "^10.2.1",
+  "eslint-config-prettier": "^10.1.8",
+  "eslint-plugin-react": "^7.37.5",
+  "eslint-plugin-react-hooks": "^7.1.1",
+  "eslint-plugin-react-refresh": "^0.5.2",
+  "globals": "^17.5.0",
+  "prettier": "^3.8.3",
+  "tailwindcss": "^4.2.4",
+  "vite": "^8.0.10"
+}
 ```
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Quick Start
 
 ### Prerequisites
-
 - Node.js 18+
-- MongoDB Atlas account (or local MongoDB)
-- Firebase project (for Google Auth)
-- Razorpay account (for payments)
+- npm or yarn
+- Firebase project (free tier works)
+- Razorpay account (for payment integration)
 
 ### Installation
 
+1. **Clone the repository**
 ```bash
-# Clone the repository
-git clone <repo-url>
-cd Innovathon
+git clone https://github.com/your-username/innovathon.git
+cd innovathon/client
+```
 
-# Install server dependencies
-cd server
-npm install
-
-# Install client dependencies
-cd ../client
+2. **Install dependencies**
+```bash
 npm install
 ```
 
-### Environment Variables
-
-**Server** (`server/.env`):
-```env
-PORT=5000
-MONGODB_URI=mongodb+srv://your-connection-string
-CLIENT_URL=http://localhost:5174
-
-# Firebase Admin SDK
-FIREBASE_PROJECT_ID=your-project-id
-FIREBASE_CLIENT_EMAIL=your-service-account-email
-FIREBASE_PRIVATE_KEY={"privateKey":"..."}
-
-# Razorpay
-RAZORPAY_KEY_ID=rzp_test_xxx
-RAZORPAY_KEY_SECRET=your-secret
+3. **Configure environment variables**
+```bash
+cp .env.example .env
 ```
 
-**Client** (`client/.env`):
+Edit `.env` with your configuration:
 ```env
+# Firebase Configuration
+VITE_FIREBASE_API_KEY=your_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_bucket.appspot.com
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+VITE_FIREBASE_APP_ID=your_app_id
+
+# Backend API (if using separate backend)
 VITE_API_URL=http://localhost:5000
 
-# Firebase Web SDK
-VITE_FIREBASE_API_KEY=your-api-key
-VITE_FIREBASE_AUTH_DOMAIN=your-project.firebaseapp.com
-VITE_FIREBASE_PROJECT_ID=your-project-id
-VITE_FIREBASE_STORAGE_BUCKET=your-project.appspot.com
-VITE_FIREBASE_MESSAGING_SENDER_ID=your-sender-id
-VITE_FIREBASE_APP_ID=your-app-id
-
-# Razorpay
-VITE_RAZORPAY_KEY_ID=rzp_test_xxx
+# Razorpay (for payments)
+VITE_RAZORPAY_KEY_ID=your_razorpay_key
 ```
 
-### Running the App
-
+4. **Start the development server**
 ```bash
-# Terminal 1 — Start the backend
-cd server
-npm run dev
-
-# Terminal 2 — Start the frontend
-cd client
 npm run dev
 ```
 
-The client runs on `http://localhost:5174` and the server on `http://localhost:5000`.
+Visit: `http://localhost:5173`
 
----
-
-## 🌐 Pages & Routes
-
-### Public Pages
-| Route | Page | Description |
-|-------|------|-------------|
-| `/` | Landing | Hero, tracks, features, timeline, CTA |
-| `/about` | About | Event overview, values, judging criteria |
-| `/schedule` | Schedule | Day-by-day event breakdown |
-| `/themes` | Themes | 7 visual theme showcase |
-| `/sponsors` | Sponsors | Sponsor tiers & partnership info |
-| `/faq` | FAQ | 12 accordion questions |
-| `/contact` | Contact | Contact form + info cards |
-| `/leaderboard` | Leaderboard | Live team rankings |
-| `/login` | Login | Google Sign-In |
-
-### Protected Pages (requires authentication)
-| Route | Page | Description |
-|-------|------|-------------|
-| `/dashboard` | Dashboard | Status cards, team info, quick links |
-| `/onboarding` | Onboarding | 5-step wizard (Name → Members → Track → Confirm → Pay) |
-| `/submission` | Submission | GitHub link, problem/solution, video/PPT URLs |
-| `/theme-selector` | Theme Selector | Choose from 7 visual themes |
-| `/admin` | Admin Panel | Stats, teams table, users table, CSV export (admin only) |
-
----
-
-## 📡 API Endpoints
-
-### Auth (`/api/auth`)
-| Method | Endpoint | Auth | Description |
-|--------|----------|------|-------------|
-| `POST` | `/google` | No | Login/register with Google ID token |
-| `GET` | `/me` | Yes | Get current user profile |
-| `GET` | `/search?email=` | Yes | Search users by email |
-
-### Teams (`/api/teams`) — All require auth
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `POST` | `/` | Create a new team |
-| `GET` | `/my` | Get current user's team |
-| `GET` | `/` | List all teams |
-
-### Submissions (`/api/submissions`) — All require auth
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `POST` | `/` | Create/update submission |
-| `GET` | `/my` | Get own team's submission |
-| `GET` | `/:teamId` | Get submission by team |
-
-### Admin (`/api/admin`) — All require auth + admin role
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `GET` | `/stats` | Dashboard statistics |
-| `GET` | `/teams` | All teams (filterable) |
-| `GET` | `/users` | All users (filterable) |
-| `GET` | `/export-csv` | Download teams as CSV |
-| `PUT` | `/toggle-leaderboard` | Toggle leaderboard visibility |
-
-### Leaderboard (`/api/leaderboard`)
-| Method | Endpoint | Auth | Description |
-|--------|----------|------|-------------|
-| `GET` | `/` | No | Public aggregated scores |
-
-### Payment (`/api/payment`) — All require auth
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `POST` | `/create-order` | Create Razorpay order |
-| `POST` | `/verify` | Verify payment signature |
-
----
-
-## 🎨 Visual Themes
-
-The platform features 7 immersive visual themes:
-
-| Theme | Colors | Particles | Speed |
-|-------|--------|-----------|-------|
-| 🌬️ Windy | Blue, Dark, Cyan | 2000 | 0.8x |
-| 🌸 Anime | Rose, Pink, Gold | 1500 | 0.3x |
-| ⛈️ Thunderstorm | Dark, Charcoal, Purple | 500 | 2.0x |
-| ❄️ Ice Storm | Steel, Blue, White | 3000 | 1.2x |
-| 🔥 Hellish | Red, Crimson, Orange | 1000 | 0.8x |
-| 🤖 AI | Teal, Cyan, Purple | 2000 | 0.5x |
-| 🚀 Sci-Fi | Neon, Teal, Green | 1800 | 0.6x |
-
----
-
-## 🏗️ Design System
-
-The UI is built on a custom glassmorphism design system defined in `client/src/styles/index.css`:
-
-- **Glass cards**: `.glass`, `.glass-card`, `.glass-strong`
-- **Buttons**: `.btn-primary`, `.btn-secondary`
-- **Inputs**: `.input-field`, `.select-field`
-- **Utilities**: `.gradient-text`, `.glow-purple`, `.glow-cyan`
-- **Layout**: `.page-with-header`, `.section`, `.section-title`
-- **Components**: `.faq-item`, `.sponsor-card`, `.timeline-item`
-- **Ambient background**: CSS-based animated gradient blobs
-
----
-
-## 👥 User Roles
-
-| Role | Capabilities |
-|------|-------------|
-| **team** (default) | Register, form teams, submit projects, view leaderboard |
-| **judge** | Score submissions on 4 criteria (Innovation, Execution, Impact, Presentation) |
-| **admin** | Full platform management, CSV export, user management, leaderboard control |
-
----
-
-## 🏆 Judging Criteria
-
-Projects are scored out of 100 points:
-
-| Criteria | Points | Description |
-|----------|--------|-------------|
-| Innovation | 40 | Originality and creativity |
-| Execution | 30 | Code quality and completeness |
-| Impact | 20 | Real-world applicability |
-| Presentation | 10 | Demo and documentation clarity |
-
----
-
-## 📦 Deployment
-
+### Production Build
 ```bash
-# Build the frontend
-cd client
+# Build for production
 npm run build
 
-# The built files are in client/dist/
-# Deploy server to Railway, Render, or AWS
-# Serve client/dist as static files or via CDN
+# Preview production build
+npm run preview
+```
+
+### Linting
+```bash
+# Run ESLint
+npm run lint
 ```
 
 ---
 
-## 📝 License
+## 🎯 Event Timeline
 
-Private — © 2026 Skillaura. All rights reserved.
+1. **Registrations Open** - Now
+   - Form your team and secure your spot
+   
+2. **Opening Ceremony** - Day 1
+   - Kick-off, theme reveal, problem statement briefing
+   
+3. **Hacking Begins** - Day 1
+   - 48 hours to build something incredible
+   
+4. **Submissions Due** - Day 3
+   - Upload your project, demo video, and presentation
+   
+5. **Judging & Results** - Day 3
+   - Live scoring and winner announcement
+
+---
+
+## 📋 Challenge Domains (Problem Themes)
+
+Participants select ONE problem domain to solve:
+
+1. **Healthcare & Wellness** 🏥
+   - Solutions for medical accessibility, fitness, mental health
+
+2. **Education & Learning** 📚
+   - EdTech innovations, personalized learning experiences
+
+3. **Sustainability & Climate** 🌍
+   - Green tech, waste management, carbon footprint solutions
+
+4. **Finance & Fintech** 💳
+   - Banking, payments, financial literacy tools
+
+5. **Smart Cities & IoT** 🏙️
+   - Urban infrastructure, connected devices, automation
+
+6. **AI & Machine Learning** 🤖
+   - Intelligent systems, automation, predictive analytics
+
+7. **Social Impact** 🤝
+   - Solutions for NGOs, communities, social good
+
+---
+
+## 🏠 Pages & Routes
+
+### Public Pages
+- `/` - Landing page with hero, features, timeline, FAQ
+- `/about` - About Innovathon and Skillaura
+- `/schedule` - Detailed event schedule
+- `/themes` - Browse visual themes
+- `/sponsors` - Sponsor showcase
+- `/faq` - Frequently asked questions
+- `/contact` - Contact form and support
+
+### Auth Pages
+- `/login` - User login
+- `/register` - User registration (redirects to onboarding)
+- `/onboarding` - Profile setup and team creation
+
+### Protected Pages (User)
+- `/dashboard` - User dashboard (team, submissions, profile)
+- `/submission` - Submit your project
+- `/theme-selector` - Live theme preview and selection
+
+### Admin Pages
+- `/admin` - Full admin panel (users, teams, submissions, scoring)
+
+---
+
+## 🔐 Authentication & Security
+
+### Firebase Integration
+- Email/password authentication
+- Google OAuth sign-in
+- Session persistence
+- Token refresh handling
+
+### Custom JWT Layer
+- Additional security beyond Firebase
+- Role-based permissions (User / Admin)
+- Team membership validation
+- API request authentication
+
+### Protected Routes
+- Automatic redirect to login for protected pages
+- Role-based access control
+- Loading states during auth check
+- Permission validation
+
+---
+
+## 📊 API Endpoints
+
+### Authentication
+- `POST /api/auth/register` - User registration
+- `POST /api/auth/login` - User login
+- `POST /api/auth/google` - Google OAuth
+- `GET /api/auth/me` - Get current user profile
+- `GET /api/auth/search` - Search users
+- `GET /api/auth/check-username` - Check username availability
+
+### Teams
+- `POST /api/teams` - Create team
+- `GET /api/teams/my` - Get user's team
+- `GET /api/teams` - Get all teams (admin)
+- `POST /api/teams/join` - Join team by invite code
+- `GET /api/teams/invite/:code` - Preview team by invite code
+
+### Submissions
+- `POST /api/submissions` - Submit project
+- `GET /api/submissions/my` - Get user's submissions
+- `GET /api/submissions/:teamId` - Get team submissions
+
+### Scoring
+- `POST /api/scores` - Submit score (judges)
+- `GET /api/scores/team/:teamId` - Get team scores
+- `GET /api/scores/judge/:judgeId` - Get judge's scores
+
+### Admin
+- `GET /api/admin/stats` - Platform statistics
+- `GET /api/admin/teams` - Get all teams (with filters)
+- `GET /api/admin/users` - Get all users (with filters)
+- `GET /api/admin/export-csv` - Export all data as CSV
+- `PUT /api/admin/toggle-leaderboard` - Toggle leaderboard visibility
+
+### Leaderboard
+- `GET /api/leaderboard` - Get leaderboard data
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── assets/              # Static assets (images, icons)
+├── components/          # Reusable UI components
+│   ├── layout/         # Layout components
+│   │   ├── Header.jsx
+│   │   ├── Footer.jsx
+│   │   ├── ProtectedRoute.jsx
+│   │   └── ScrollToTop.jsx
+│   ├── theme/          # Theme-specific components
+│   │   └── ThemeBackground.jsx
+│   ├── ui/             # UI components
+│   │   ├── ThemePreview.jsx
+│   │   ├── ThemeSwitcher.jsx
+│   │   ├── LoadingScreen.jsx
+│   │   └── AmbientBackground.jsx
+│   ├── Hero.tsx        # Hero section
+│   ├── CTA.tsx         # Call-to-action
+│   ├── Section.tsx     # Section wrapper
+│   └── Navbar.tsx      # Navigation bar
+├── contexts/           # React contexts
+│   └── AuthContext.jsx # Authentication state
+├── pages/              # Route page components (15 pages)
+├── services/           # API and external services
+│   └── api.js          # Axios instance & API endpoints
+├── themes/             # Theme configurations
+│   ├── ThemeProvider.tsx
+│   └── theme.config.ts
+├── config/             # App configuration
+│   ├── themes.js       # Theme definitions
+│   └── hackathonThemes.js
+├── styles/             # Global styles
+│   ├── index.css       # Main styles
+│   ├── themes.css      # Theme-specific CSS
+│   └── effects.css     # Animation effects
+├── App.jsx             # Main application component
+├── App.css             # App-level styles
+├── main.jsx            # Application entry point
+└── firebase.js         # Firebase initialization
+```
+
+---
+
+## 🤝 Judging Criteria
+
+Projects are scored across 4 criteria:
+
+1. **Innovation (40%)**
+   - Novelty of the solution
+   - Creative approach to the problem
+   - Unique features
+
+2. **Execution (30%)**
+   - Technical complexity
+   - Code quality
+   - Functionality
+
+3. **Impact (20%)**
+   - Real-world applicability
+   - Potential user base
+   - Social/economic value
+
+4. **Presentation (10%)**
+   - Demo quality
+   - Clarity of explanation
+   - Professionalism
+
+---
+
+## 🎯 Future Enhancements
+
+### High Priority
+- [ ] Real-time chat for team collaboration
+- [ ] Email notifications for updates
+- [ ] File uploads for project assets
+- [ ] Community voting system
+- [ ] QR code check-in for event attendance
+
+### Medium Priority
+- [ ] Multi-language support (i18n)
+- [ ] Mobile app (React Native/PWA)
+- [ ] Advanced analytics dashboard
+- [ ] Sponsorship management portal
+- [ ] Prize distribution system
+- [ ] Calendar integration
+
+### Theme Improvements
+- [ ] Custom theme editor UI
+- [ ] User-created theme sharing
+- [ ] Theme marketplace
+- [ ] Dynamic theme switching animations
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions to improve Innovathon! Here's how you can help:
+
+### For Bug Fixes
+1. Fork the repository
+2. Create a branch: `git checkout -b fix/issue-description`
+3. Make your changes
+4. Add tests if applicable
+5. Submit a Pull Request
+
+### For New Features
+1. Open an issue first to discuss the feature
+2. Get approval before implementing
+3. Follow the existing code style
+4. Update documentation
+5. Submit a Pull Request
+
+### Code Style Guidelines
+- Use ESLint configuration
+- Follow Prettier formatting
+- Write meaningful commit messages
+- Add comments for complex logic
+- Update README for major features
+
+### Testing
+- Test manually before submitting PR
+- Ensure no console errors
+- Verify all themes work correctly
+- Check responsive design on all screen sizes
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**. See the LICENSE file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+### Event Organizers
+- **Skillaura Team** - Making this happen
+- **Judges** - Industry experts evaluating submissions
+- **Mentors** - Guiding participants throughout
+
+### Technology Partners
+- **Firebase** - Backend infrastructure
+- **Razorpay** - Payment processing
+- **Vercel** - Deployment platform
+- **Unsplash** - Gallery images
+
+### Open Source
+- **React Team** - UI library
+- **Vite Team** - Build tool
+- **Three.js Team** - 3D graphics
+- **Tailwind CSS Team** - Styling framework
+- **Framer Motion Team** - Animations
+
+### Inspiration
+- Modern hackathon platforms worldwide
+- Creative coding communities
+- Immersive web experiences
+- Design system principles
+
+---
+
+## 📞 Support & Contact
+
+For questions, issues, or contributions:
+
+- 📧 **Email**: support@skillaura.in
+
+- 🌐 **Website**: https://innovathon.skillaura.in
+- 🐙 **GitHub**: https://github.com/your-username/innovathon
+
+---
+
+## ⭐ Star History
+
+[![GitHub stars](https://img.shields.io/github/stars/your-username/innovathon?style=social)](https://github.com/your-username/innovathon/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/your-username/innovathon?style=social)](https://github.com/your-username/innovathon/network/members)
+[![GitHub watchers](https://img.shields.io/github/watchers/your-username/innovathon?style=social)](https://github.com/your-username/innovathon/watchers)
+
+---
+
+**Built with ❤️ by the Skillaura Team and Innovathon Community**  
+**Hack the Future. Innovate Today.**
