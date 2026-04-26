@@ -1,0 +1,127 @@
+@layer base {
+  :root[data-theme="ai"], :root {
+    --bg-main: #05050A;
+    --bg-surface: #0F111A;
+    --color-primary: #00F0FF;
+    --color-secondary: #FF0055;
+    --theme-c1: #00F0FF;
+    --theme-c2: #FF0055;
+    --color-text: #E2E0E8;
+    --font-header: 'JetBrains Mono', monospace;
+    --font-body: 'Inter', sans-serif;
+    --radius-card: 0.375rem; /* rounded-md */
+    --theme-radius: 0.375rem;
+    --theme-radius-btn: 0.375rem;
+    --theme-glass-bg: rgba(15, 17, 26, 0.6);
+    --border-main: rgba(255, 255, 255, 0.05);
+  }
+
+  :root[data-theme="sci-fi"] {
+    --bg-main: #09090B;
+    --bg-surface: #18181B;
+    --color-primary: #39FF14;
+    --color-secondary: #FF4500;
+    --theme-c1: #39FF14;
+    --theme-c2: #FF4500;
+    --color-text: #E2E0E8;
+    --font-header: 'Orbitron', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+    --radius-card: 0px;
+    --theme-radius: 0px;
+    --theme-radius-btn: 0px;
+    --theme-glass-bg: rgba(24, 24, 27, 0.8);
+    --border-main: rgba(57, 255, 20, 0.3);
+  }
+
+  :root[data-theme="fire"] {
+    --bg-main: #030000;
+    --bg-surface: #1A0505;
+    --color-primary: #FF3300;
+    --color-secondary: #FFD700;
+    --theme-c1: #FF3300;
+    --theme-c2: #FFD700;
+    --color-text: #E2E0E8;
+    --font-header: 'Oswald', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+    --radius-card: 0.125rem; /* rounded-sm */
+    --theme-radius: 0.125rem;
+    --theme-radius-btn: 0.125rem;
+    --theme-glass-bg: rgba(26, 5, 5, 0.8);
+    --border-main: rgba(255, 51, 0, 0.3);
+  }
+
+  :root[data-theme="thunder"] {
+    --bg-main: #0B0C10;
+    --bg-surface: #1F2833;
+    --color-primary: #8A2BE2;
+    --color-secondary: #F8FAFC;
+    --theme-c1: #8A2BE2;
+    --theme-c2: #F8FAFC;
+    --color-text: #E2E0E8;
+    --font-header: 'Syncopate', sans-serif;
+    --font-body: 'Montserrat', sans-serif;
+    --radius-card: 0px;
+    --theme-radius: 0px;
+    --theme-radius-btn: 0px;
+    --theme-glass-bg: rgba(31, 40, 51, 0.8);
+    --border-main: rgba(138, 43, 226, 0.3);
+  }
+
+  :root[data-theme="ice"] {
+    --bg-main: #001524;
+    --bg-surface: #0A2A43;
+    --color-primary: #A0E6FF;
+    --color-secondary: #FFFFFF;
+    --theme-c1: #A0E6FF;
+    --theme-c2: #FFFFFF;
+    --color-text: #E2E0E8;
+    --font-header: 'Montserrat', sans-serif;
+    --font-body: 'Lato', sans-serif;
+    --radius-card: 0.75rem; /* rounded-xl */
+    --theme-radius: 0.75rem;
+    --theme-radius-btn: 0.75rem;
+    --theme-glass-bg: rgba(255, 255, 255, 0.05);
+    --border-main: rgba(255, 255, 255, 0.1);
+  }
+
+  :root[data-theme="wind"] {
+    --bg-main: #F0F8FF;
+    --bg-surface: #FFFFFF;
+    --color-primary: #38BDF8;
+    --color-secondary: #0EA5E9;
+    --theme-c1: #38BDF8;
+    --theme-c2: #0EA5E9;
+    --color-text: #334155;
+    --font-header: 'Quicksand', sans-serif;
+    --font-body: 'Nunito', sans-serif;
+    --radius-card: 9999px; /* rounded-full for many elements, or 40px */
+    --theme-radius: 40px;
+    --theme-radius-btn: 9999px;
+    --theme-glass-bg: rgba(255, 255, 255, 0.6);
+    --border-main: rgba(56, 189, 248, 0.2);
+  }
+
+  :root[data-theme="anime"] {
+    --bg-main: #FAFAFA;
+    --bg-surface: #FFFFFF;
+    --color-primary: #FF007F;
+    --color-secondary: #FFDF00;
+    --theme-c1: #FF007F;
+    --theme-c2: #FFDF00;
+    --color-text: #000000;
+    --font-header: 'Bangers', cursive;
+    --font-body: 'Comic Neue', cursive;
+    --radius-card: 0px;
+    --theme-radius: 0px;
+    --theme-radius-btn: 0px;
+    --theme-glass-bg: rgba(255, 255, 255, 1);
+    --border-main: #000000;
+  }
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
