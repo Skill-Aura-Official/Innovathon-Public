@@ -11,10 +11,6 @@ import LoadingScreen from './components/ui/LoadingScreen';
 import ThemeSwitcher from './components/ThemeSwitcher';
 import ThemeBackground from './components/theme/ThemeBackground';
 
-import Hero from './components/Hero';
-import Section from './components/Section';
-import CTA from './components/CTA';
-
 const About = lazy(() => import('./pages/About'));
 const Admin = lazy(() => import('./pages/Admin'));
 const Contact = lazy(() => import('./pages/Contact'));
@@ -23,7 +19,6 @@ const FAQ = lazy(() => import('./pages/FAQ'));
 const Leaderboard = lazy(() => import('./pages/Leaderboard'));
 const Login = lazy(() => import('./pages/Login'));
 const Onboarding = lazy(() => import('./pages/Onboarding'));
-const Register = lazy(() => import('./pages/Register'));
 const Schedule = lazy(() => import('./pages/Schedule'));
 const Sponsors = lazy(() => import('./pages/Sponsors'));
 const Submission = lazy(() => import('./pages/Submission'));

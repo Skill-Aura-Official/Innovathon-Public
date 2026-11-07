@@ -50,4 +50,4 @@ Built by the **SkillAura Team and Innovathon Community**. Existing Git history p
 
 ## Documentation review checks (2026-11-07)
 
-Clean installation is currently BLOCKED: ESLint 10.2.1 conflicts with eslint-plugin-react 7.37.5, whose declared peer range stops at ESLint 9.7. Build/lint were not run after that failure. Resolve the package compatibility issue through a reviewed source change; do not bypass it with force flags.
+Clean frontend installation, build and lint passed on Node 24.3.0 with the compatible ESLint 9 lockfile. These checks did not connect to the event backend or authenticate with external providers.
